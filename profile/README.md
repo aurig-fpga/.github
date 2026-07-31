@@ -11,7 +11,7 @@ AURIG is a suite of open-source tools that work together to orchestrate the FPGA
 ## The stack
 
 - **Sentinel** — pipeline orchestrator (scheduling, regression, artifact bundling)
-- **Build** — multi-vendor build engine (Vivado, Quartus, Diamond, Radiant)
+- **AURIG Build** — multi-vendor build engine: Vivado, Quartus, Radiant, Diamond (experimental). Project import from Vivado, Quartus and Diamond.
 - **Lint** — VHDL linter with configurable rule sets
 - **Doc** — automatic documentation generator
 - **Core** — shared library: VHDL parser, YAML manifest, utilities
