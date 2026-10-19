@@ -2,7 +2,7 @@
 
 **Open-source FPGA pipeline tooling for on-prem labs.**
 
-Three layers, one manifest. Built by FPGA designers, used by FPGA designers.
+Built by FPGA designers, used by FPGA designers.
 
 ## What is AURIG?
 
@@ -10,17 +10,17 @@ AURIG is a suite of open-source tools that work together to orchestrate the FPGA
 
 ## The stack
 
-- **Sentinel** — pipeline orchestrator (scheduling, regression, artifact bundling)
+- **AURIG Sentinel** — pipeline orchestrator (scheduling, regression, artifact bundling)
 - **Build** — multi-vendor build engine (Vivado, Quartus, Diamond, Radiant)
-- **Lint** — VHDL linter with configurable rule sets
-- **Doc** — automatic documentation generator
-- **Core** — shared library: VHDL parser, YAML manifest, utilities
+- **AURIG Lint** — VHDL linter with configurable rule sets
+- **AURIG Doc** — automatic documentation generator
+- **AURIG Core** — shared library: VHDL parser, YAML manifest, utilities
 
-All five tools share a single canonical project manifest in YAML.
+Projects are described by one canonical YAML manifest, defined by a shared JSON Schema. The contract is set out in [decision 0001](https://github.com/aurig-fpga/.github/blob/main/decisions/0001-manifest-contract.md); its implementation across the tools is in progress.
 
 ## Status
 
-AURIG is in active development. Public repositories will be published progressively in the coming weeks.
+AURIG is in early access and under active development. All five tools listed above are published as public repositories in this organization.
 
 For early information, partnership inquiries, or professional services (setup, migration, support), contact us at [LogiMentor](https://logimentor.com).
 
